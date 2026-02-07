@@ -47,6 +47,12 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     width: 100%;
     max-width: 1288px;
@@ -57,7 +63,7 @@ body {
 
 
 h1,h2,h3,h4,h5,h6,p {
-    margin-top: 0 auto;
+    margin-top: 0;
 }
 
 address {
@@ -65,9 +71,7 @@ address {
   
 }
 
-ul{
-    list-style-type: none;
-}
+
 .button {
     padding: 15px 32px;
     color: var(--color-primary-white);
@@ -85,20 +89,48 @@ ul{
 
 .link {
     color: var(--color-primary-white);
+    font-weight: 600;
     
 }
 
 .link:hover {
     color: var(--color-brand);
-    font-weight: 600;
+   
 }
+
+/* test-fon heder */
+.test-fon {
+    background-color: darkgray;
+}
+
+/* Heder container */
+.heder-container {
+ display: flex;
+ align-items: center;
+ gap: 40px;
+}
+
+.header-nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center; 
+    gap: 40px;   
+}
+
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 
 .section {
     padding: 48px 0;
 }
 
 .hero-section {
-    padding: 172px 0;
+    padding: 272px 0;
 }
 
 .hero-title {
@@ -124,14 +156,35 @@ ul{
         
 }
 
+/* advantages-section */
+
+.advantages-section {
+    background-color: var(--color-brand) ;
+    padding: 16px 0;
+    
+}
+
 .advantages-list {
     color:var(--color-primary-white) ;
-    background-color: var(--color-brand) ;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .advantages-item {
     font-size: 20px;
     font-weight: 300;    
+}
+
+/* Tradition-container */
+.traditions-container {
+display: flex;
+justify-content: space-between;
+gap: 40px;
+}
+
+.traditions-content {
+    max-width: 708px;
 }
 
 .traditions-section {
@@ -159,6 +212,10 @@ ul{
     font-weight: 600;
 }
 
+.text-traditions.limit {
+    max-width: 335px;
+}
+
 .link {
     text-decoration: none;
 }
@@ -177,9 +234,27 @@ margin-bottom: 80px;
     margin-bottom: 80px;
 }
 
+/* Formats */
+
+.format-card{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.format-list {
+    padding: 24px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+}
+
 .format-title {
     font-size: 24px;
     font-weight: 600;
+}
+
+.shperma-format {
+    flex-basis: calc((100% - 40px) / 3 );
 }
 
 .text-format {

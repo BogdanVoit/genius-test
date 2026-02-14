@@ -224,6 +224,26 @@ address {
   text-decoration: none;
 }
 
+/* chefs */
+
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-list {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-text.limit {
+  max-width: 334px;
+}
+
 .title-chef {
   margin: 0 auto 80px;
   max-width: 520px;
@@ -263,7 +283,7 @@ address {
 .format-card {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .format-list {
@@ -279,6 +299,12 @@ address {
   border: 1px solid lightgray;
   border-radius: 16px;
   /* box-shadow: 2px 2px 20px 10px yellow; */
+}
+
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
 
 .format-title {
@@ -301,6 +327,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   padding: 0;
   width: 44px;
   height: 44px;
@@ -319,6 +346,23 @@ address {
 
 .arrow-format {
   fill: var(--color-primary-dark);
+}
+
+/* contact-section */
+
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
 }
 
 .title-contact {

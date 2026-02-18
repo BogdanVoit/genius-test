@@ -80,7 +80,7 @@
       <section class="section" id="chefs-section">
         <div class="container">
           <h2 class="section-title title-chef centered">
-            Наші найкращі <span class="color-text">шеф-кухарі</span>
+            Наші найкращі <br /><span class="color-text">шеф-кухарі</span>
           </h2>
           <ul class="chef-list">
             <li class="chef-item">
@@ -90,17 +90,19 @@
                   src="./image/nastya.jpg"
                   alt="Nastya"
                 />
-                <div class="">
+                <div>
                   <h3 class="chef-title">Настя</h3>
-                  <p class="chef-text">Привіт, я Настя!</p>
-                  <p class="chef-text">
-                    Вже 10 років, я втілюю <br />
-                    у життя цікаві та смачні ідеї.
-                  </p>
-                  <p class="chef-text">
-                    Я випічу для вас <br />
-                    найсмачніщі вироби!
-                  </p>
+                  <div class="chef-text">
+                    <p>Привіт, я Настя!</p>
+                    <p>
+                      Вже 10 років, я втілюю <br />
+                      у життя цікаві та смачні ідеї.
+                    </p>
+                    <p>
+                      Я випічу для вас <br />
+                      найсмачніщі вироби!
+                    </p>
+                  </div>
                 </div>
               </article>
             </li>
@@ -209,28 +211,30 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="#"
-            ><img src="./image/logo.svg" alt="Логотип сучасної перкарні"
-          /></a>
-          <ul>
-            <li>
-              <a class="link" href="">Франшиза</a>
-            </li>
-            <li>
-              <a class="link" href="">Наші традиції </a>
-            </li>
-            <li>
-              <a class="link" href="">Формати</a>
-            </li>
-            <li>
-              <a class="link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <nav>
-          <address>
-            <ul>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a href="#"
+                ><img src="./image/logo.svg" alt="Логотип сучасної перкарні"
+              /></a>
+            </div>
+            <ul class="footer-menu">
+              <li>
+                <a class="link" href="">Франшиза</a>
+              </li>
+              <li>
+                <a class="link" href="">Наші традиції </a>
+              </li>
+              <li>
+                <a class="link" href="">Формати</a>
+              </li>
+              <li>
+                <a class="link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
               <li>
                 <a class="address-link" href="tel:+380960000007" target="_blank"
                   >+38(096) 000 00 07</a
@@ -249,8 +253,6 @@
                   >Україна, м. Київ, вул. Січових Стрільців 54</a
                 >
               </li>
-            </ul>
-            <ul>
               <li>
                 <!-- prettier-ignore -->
                 <a href="#"><svg class="addres-icon" width="32" height="32">
@@ -262,14 +264,14 @@
                   <use href="./image/icons.svg#icon-instagram"></use></svg></a>
               </li>
             </ul>
-            <a class="address-link" href="" target="_blank"
-              >Політика конфіденційності
-            </a>
-            <p class="address-copyright">&copy;2022 Дані захищені</p>
+            <div class="address-info">
+              <a class="address-link" href="" target="_blank"
+                >Політика конфіденційності
+              </a>
+              <p class="address-copyright">&copy;2022 Дані захищені</p>
+            </div>
           </address>
-        </nav>
-        <p>test!</p>
-        <!-- потім видалити  -->
+        </div>
       </div>
     </footer>
     <!-- <div class="test_gradient"></div> -->

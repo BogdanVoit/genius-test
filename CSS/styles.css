@@ -420,6 +420,7 @@ address {
 }
 
 .footer {
+  position: relative;
   background-image: url(../image/footer_backgraund.png);
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
@@ -456,4 +457,59 @@ address {
 .address-list,
 .address-info {
   flex-grow: 1;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  left: 0;
+  background-image: url(../image/decor-bread-one.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(../image/decor-bread-two.png);
+}
+
+/* Modal-window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+  opacity: 0.5;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primary-white);
+  border-radius: 32px;
+}
+
+.modal-bth-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }

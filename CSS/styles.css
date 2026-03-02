@@ -45,6 +45,7 @@
 }
 
 body {
+  background-color: #faf4ea;
   color: var(--color-primary-dark);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -92,6 +93,9 @@ address {
   background-color: var(--color-brand);
   border-radius: 8px;
   cursor: pointer;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
 }
 
 .button:hover {
@@ -102,6 +106,7 @@ address {
 .link {
   color: var(--color-primary-white);
   font-weight: 600;
+  transition: color 0.3s;
 }
 
 .link:hover {
@@ -110,7 +115,11 @@ address {
 
 /* test-fon heder */
 .test-fon {
-  background-color: darkgray;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 32px 0;
 }
 
 /* Heder container */
@@ -118,6 +127,10 @@ address {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+.heder-logo {
+  display: flex;
 }
 
 .header-nav {
@@ -140,7 +153,14 @@ address {
 
 .hero-section {
   padding: 272px 0;
-  background-image: url(../image/man_woman.jpg);
+  background-image:
+    linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.48%
+    ),
+    url(../image/man_woman.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -332,6 +352,11 @@ address {
   border: 1px solid lightgray;
   border-radius: 16px;
   /* box-shadow: 2px 2px 20px 10px yellow; */
+  transition: transform 0.6s;
+}
+
+.format-list:hover {
+  transform: scale(1.05);
 }
 
 .formats-container {
@@ -368,6 +393,10 @@ address {
   background-color: transparent;
   border: 1px solid var(--color-primary-dark);
   cursor: pointer;
+}
+
+.carusel-button.right {
+  transform: rotate(180deg);
 }
 
 .carusel-button:hover {
@@ -483,6 +512,7 @@ address {
 
 /* Modal-window */
 .backdrop {
+  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -492,24 +522,60 @@ address {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
 }
 
 .backdrop.is-hidden {
-  opacity: 0.5;
+  opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
 .modal {
   position: relative;
-  width: 880px;
-  height: 880px;
+  max-width: 880px;
+  width: 100%;
+  max-height: 880px;
+  height: 100%;
   background-color: var(--color-primary-white);
   border-radius: 32px;
+  padding: 128px;
 }
 
 .modal-bth-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* Forma */
+.form-input {
+  display: block;
+  margin: 0;
+  padding-bottom: 32px;
+}
+
+.input-select {
+  width: 100%;
+  padding: 16px 32px;
+  background-color: transparent;
+  border: 1px solid var(--color-secendory-dark);
+  border-radius: 8px;
+}
+
+.button-form {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+/* .button-form[disabled] {
+  color: lightcyan;
+  background-color: lightblue;
+  border-color: currentColor;
+} */
+
+.title-form {
+  align-items: center;
 }

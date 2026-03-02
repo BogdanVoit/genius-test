@@ -17,7 +17,7 @@
       <div class="container">
         <div class="heder-container">
           <nav class="header-nav">
-            <a href="./index.html">
+            <a class="heder-logo" href="./index.html">
               <img src="./image/logo.svg" alt="Логотип сучасної перкарні" />
             </a>
             <ul class="header-menu">
@@ -181,7 +181,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carusel-button" type="button">
+            <button class="carusel-button right" type="button">
               <!-- prettier-ignore -->
               <svg class="arrow-format" width="16" height="16">
             <use href="./image/icons.svg#icon-arrow"></use></svg>
@@ -276,9 +276,58 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-bth-close" type="button">Close</button>
+        <h2 class="title-form">Замовити дзвінок</h2>
+        <p class="text-form">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form name="contact-form" autocomplete="off">
+          <div class="form-input">
+            <label class="hidden" for="user_name">Ім'я</label>
+            <input
+              class="input-select"
+              type="text"
+              name="user_name"
+              id="user_name"
+              placeholder="Ім'я"
+              minlength="2"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <label class="hidden" for="user-phone">Телефон</label>
+            <input
+              class="input-select"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              placeholder="Телефон"
+              required
+              pattern="^(\+38)?0\d{9}$"
+            />
+          </div>
+          <div class="form-input">
+            <label class="hidden" for="user-mail">Електронна пошта</label>
+            <input
+              class="input-select"
+              type="email"
+              name="user-mail"
+              id="user-mail"
+              placeholder="Електронна пошта"
+              required
+            />
+          </div>
+          <button class="button button-form" type="submit">
+            Замовити дзвінок
+          </button>
+          <p>
+            Натискаючи на кнопку я погоджуюсь
+            <a href="#">з політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

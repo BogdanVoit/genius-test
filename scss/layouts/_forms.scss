@@ -1,0 +1,28 @@
+.form-input {
+    display: block;
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.input-select {
+    width: 100%;
+    padding: 16px 32px;
+    background-color: transparent;
+    border: 1px solid var(--color-secendory-dark);
+    border-radius: 8px;
+}
+
+.button-form {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+/* .button-form[disabled] {
+  color: lightcyan;
+  background-color: lightblue;
+  border-color: currentColor;
+} */
+
+.title-form {
+    align-items: center;
+}

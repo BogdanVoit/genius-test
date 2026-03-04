@@ -1,0 +1,100 @@
+.format-card {
+    display: flex;
+    gap: 20px;
+
+    /* flex-wrap: wrap; */
+}
+
+.title-formats {
+    margin-bottom: 80px;
+}
+
+
+.format-list {
+    position: relative;
+    width: 349px;
+    height: 444px;
+    padding: 24px;
+    background-image: linear-gradient(180deg,
+            rgba(49, 38, 26, 0) 22.21%,
+            rgba(49, 38, 26, 0.71) 72.92%,
+            var(--color-primary-dark));
+    border-radius: 16px;
+    transition: transform 0.6s, background-image 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.format-list:hover {
+    transform: scale(1.05);
+
+}
+
+.format-image {
+    position: absolute;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.format-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary-white);
+}
+
+.shperma-format {
+    flex-basis: calc((100% - 40px) / 3);
+
+}
+
+.text-format {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-primary-white);
+}
+
+/* Carusel-format */
+
+.carusel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-dark);
+    cursor: pointer;
+}
+
+.carusel-button.right {
+    transform: rotate(180deg);
+}
+
+.carusel-button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.carusel-button:hover .arrow-format {
+    fill: var(--color-primary-white);
+}
+
+.arrow-format {
+    fill: var(--color-primary-dark);
+}

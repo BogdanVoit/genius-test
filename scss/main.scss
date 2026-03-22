@@ -1,7 +1,9 @@
 @import './utils/fonts';
 @import './utils/variables';
 @import './base';
+@import './layouts/section';
 @import './utils/utils';
+@import './utils/texts';
 @import './components/buttons';
 @import './components/header';
 @import './components/hero-section';
@@ -13,4 +15,5 @@
 @import './layouts/contact-section';
 @import './layouts/footer';
 @import './layouts/modal';
+@import './layouts/mobile-menu';
 @import './layouts/forms';

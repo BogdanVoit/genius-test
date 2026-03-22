@@ -1,31 +1,51 @@
-.test-fon {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 32px 0;
-}
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 32px 0;
 
-.heder-container {
+  &__container {
     display: flex;
     align-items: center;
     gap: 40px;
-}
+  }
 
-.heder-logo {
-    display: flex;
-}
-
-.header-nav {
+  &__nav {
     display: flex;
     flex-grow: 1;
     align-items: center;
     gap: 40px;
-}
+  }
 
-.header-menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    fill: var(--color-primary-white);
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
 }

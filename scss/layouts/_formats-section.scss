@@ -1,18 +1,12 @@
-.format-card {
-  display: flex;
-  gap: 20px;
-
-  /* flex-wrap: wrap; */
-}
-
 .title-formats {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 80px;
+  }
 }
 
 .format-list {
   position: relative;
-  width: 349px;
-  height: 444px;
   padding: 24px;
   background-image: linear-gradient(
     180deg,
@@ -27,10 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-}
-
-.format-list:hover {
-  transform: scale(1.05);
+  height: 444px;
 }
 
 .format-image {
@@ -44,10 +35,14 @@
   z-index: -1;
 }
 
-.formats-container {
+.formats-slider {
   display: flex;
   gap: 32px;
   align-items: center;
+}
+
+.swiper-container {
+  overflow: hidden;
 }
 
 .format-title {
@@ -56,14 +51,13 @@
   color: var(--color-primary-white);
 }
 
-.shperma-format {
-  flex-basis: calc((100% - 40px) / 3);
-}
-
 .text-format {
   font-size: 14px;
   font-weight: 300;
   color: var(--color-primary-white);
+}
+.margin {
+  margin-bottom: 32px;
 }
 
 /* Carusel-format */
@@ -96,4 +90,11 @@
 
 .arrow-format {
   fill: var(--color-primary-dark);
+}
+
+.button-mob {
+  display: none;
+  @media screen and (min-width: $bp-mobile) {
+    display: flex;
+  }
 }
